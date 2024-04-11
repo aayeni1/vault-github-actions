@@ -31,7 +31,7 @@ jobs:
           rm ./token.json
       env:
         VAULT_URL: ${{ secrets.VAULT_ADDR }}
-        VAULT_AUTH_PATH: jwt
+        VAULT_AUTH_PATH: jwt-github-actions
         VAULT_ROLE: ${{ secrets.VAULT_ROLE }}
 
     - name: Retrieve Secrets
